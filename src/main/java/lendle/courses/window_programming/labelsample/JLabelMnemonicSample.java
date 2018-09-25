@@ -27,23 +27,30 @@ public class JLabelMnemonicSample {
         frame.setLayout(new FlowLayout());
         JLabel label1 = new JLabel("User");
         JLabel label2 = new JLabel("Password");
+        JLabel label3 = new JLabel("Birthday");
+        
         //設定 label1 和 label2 的 displayed mnemonic
         label1.setDisplayedMnemonic('U');
         label2.setDisplayedMnemonic('P');
+        label3.setDisplayedMnemonic('B');
         
         
         ////////////////////////////////////////////
         JTextField textField = new JTextField(20);
         JTextField textField1 = new JTextField(20);
+        JTextField textField2 = new JTextField(20);
         
         //設定 label1 和 label2 的 labelfor
         label1.setLabelFor(textField);
         label2.setLabelFor(textField1);
+        label3.setLabelFor(textField2);
         //////////////////////////////////
         frame.add(label1);
         frame.add(textField);
         frame.add(label2);
         frame.add(textField1);
+        frame.add(label3);
+        frame.add(textField2);
         frame.setSize(800, 500);
         frame.setVisible(true);
 
